@@ -1,0 +1,25 @@
+Source: libnginx-mod-http-dav-ext
+Section: httpd
+Priority: optional
+Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
+Uploaders: Jan Mojžíš <janmojzis@debian.org>,
+Build-Depends: debhelper-compat (= 13),
+               dh-sequence-nginx,
+               libxml2-dev,
+Standards-Version: 4.7.2
+Homepage: https://github.com/arut/nginx-dav-ext-module
+Vcs-Git: https://salsa.debian.org/nginx-team/libnginx-mod-http-dav-ext.git
+Vcs-Browser: https://salsa.debian.org/nginx-team/libnginx-mod-http-dav-ext
+Rules-Requires-Root: no
+
+Package: libnginx-mod-http-dav-ext
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Recommends: nginx,
+Description: WebDAV missing commands support for Nginx
+ WebDAV Ext module complements the Nginx WebDAV module to provide a full
+ WebDAV support.
+ .
+ WebDAV Ext provides the missing PROPFIND & OPTIONS methods.
